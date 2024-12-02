@@ -23,9 +23,9 @@ export default function Home() {
       {/* <Intro /> */}
       {/* <Info /> */}
       <Clients />
+      <News />
       <Awards />
       <Footer />
-      <News />
     </div>
   );
 }

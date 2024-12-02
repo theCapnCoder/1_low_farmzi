@@ -18,8 +18,8 @@ export default function Home() {
       {/* <Main /> */}
       {/* <About /> */}
       {/* <Service /> */}
-      <Call />
-      <Team />
+      {/* <Call /> */}
+      {/* <Team /> */}
       <Intro />
       <Info />
       <Awards />

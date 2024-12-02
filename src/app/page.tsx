@@ -18,10 +18,10 @@ export default function Home() {
       {/* <Main /> */}
       {/* <About /> */}
       <Service />
+      <Call />
       <Intro />
       <Info />
       <Awards />
-      <Call />
       <Clients />
       <Footer />
       <News />

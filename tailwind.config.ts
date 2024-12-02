@@ -10,6 +10,7 @@ export default {
     extend: {
       colors: {
         gray_light: "#777",
+        green_ultra_light: "#e1f4f2",
         green_light: "#177165",
         white_light: "#a4d6cf",
         background: "var(--background)",

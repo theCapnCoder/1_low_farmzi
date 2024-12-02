@@ -20,10 +20,10 @@ export default function Home() {
       {/* <Service /> */}
       {/* <Call /> */}
       {/* <Team /> */}
-      <Intro />
-      <Info />
-      <Awards />
+      {/* <Intro /> */}
+      {/* <Info /> */}
       <Clients />
+      <Awards />
       <Footer />
       <News />
     </div>

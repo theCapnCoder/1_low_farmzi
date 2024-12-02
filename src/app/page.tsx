@@ -14,16 +14,16 @@ import Team from "./_containers/team";
 export default function Home() {
   return (
     <div>
-      {/* <Header /> */}
-      {/* <Main /> */}
-      {/* <About /> */}
-      {/* <Service /> */}
-      {/* <Call /> */}
-      {/* <Team /> */}
-      {/* <Intro /> */}
-      {/* <Info /> */}
-      {/* <Clients /> */}
-      {/* <News /> */}
+      <Header />
+      <Main />
+      <About />
+      <Service />
+      <Call />
+      <Team />
+      <Intro />
+      <Info />
+      <Clients />
+      <News />
       <Awards />
       <Footer />
     </div>

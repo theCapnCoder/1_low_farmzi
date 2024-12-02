@@ -22,8 +22,8 @@ export default function Home() {
       {/* <Team /> */}
       {/* <Intro /> */}
       {/* <Info /> */}
-      <Clients />
-      <News />
+      {/* <Clients /> */}
+      {/* <News /> */}
       <Awards />
       <Footer />
     </div>

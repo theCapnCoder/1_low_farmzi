@@ -21,29 +21,33 @@ const cards = [
 
 export default function Service() {
   return (
-    <section className="bg-green_ultra_light py-10">
+    <section className="bg-green_ultra_light py-24">
       <Container>
-        <LineText lineClassName="border-red-500">
-          <h5 className="text-gray_light">Our Services</h5>
+        <LineText gray className="mb-4">
+          <h5 className="text-gray_dark">Our Services</h5>
         </LineText>
-        <h2 className="mb-10 text-3xl text-green_light">
+        <h2 className="mb-12 font-playfair_display text-5xl leading-tight text-green_dark">
           Farmzi always provide amazing gardening and landscaping services.
         </h2>
 
-        <div className="mb-10 grid grid-cols-4 gap-12">
+        <div className="mb-20 grid grid-cols-4 gap-12">
           {cards.map((card) => (
             <div key={card.title}>
-              <Image src={card.img} alt={card.alt} className="mb-6" />
-              <LineText className="mb-2">
-                <h5 className="text-gray_light">{card.text}</h5>
+              <Image src={card.img} alt={card.alt} className="mb-8" />
+              <LineText gray className="mb-2">
+                <h5 className="text-gray_dark">{card.text}</h5>
               </LineText>
-              <h4 className="text-xl text-green_light">{card.title}</h4>
+              <h4 className="font-playfair_display tracking-wider text-xl leading-relaxed text-green_dark">
+                {card.title}
+              </h4>
             </div>
           ))}
         </div>
 
         <div className="flex justify-center">
-          <Button className="text-green_light border-2 border-green_light">More Service</Button>
+          <Button className="border-2 w-full max-w-52 border-green_dark bg-transparent text-green_dark">
+            More Service
+          </Button>
         </div>
       </Container>
     </section>

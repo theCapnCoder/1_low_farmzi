@@ -7,16 +7,16 @@ import Award5 from "../../../public/images/awards/award_5.png";
 
 export default function Awards() {
   const cards = [
-    { id: 1, img: Award1, alt: "award" },
-    { id: 2, img: Award2, alt: "award" },
-    { id: 3, img: Award3, alt: "award" },
+    { id: 1, img: Award5, alt: "award" },
+    { id: 2, img: Award3, alt: "award" },
+    { id: 3, img: Award1, alt: "award" },
     { id: 4, img: Award4, alt: "award" },
-    { id: 5, img: Award5, alt: "award" },
+    { id: 5, img: Award2, alt: "award" },
   ];
 
   return (
-    <section className="bg-green_ultra_light py-20">
-      <div className="flex max-w-5xl justify-between m-auto">
+    <section className="bg-green_ultra_light py-24">
+      <div className="flex max-w-[1050px] justify-between m-auto">
         {cards.map((card) => (
           <div key={card.id}>
             <Image src={card.img} alt={card.alt} />

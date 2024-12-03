@@ -28,7 +28,7 @@ const cards = [
 
 export default function News() {
   return (
-    <section className="py-20">
+    <section className="py-20 mb-8">
       <Container>
         <LineText className="mb-3" gray>
           <h5 className="text-lg leading-relaxed text-gray_dark">

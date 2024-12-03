@@ -18,7 +18,7 @@ export default function Header() {
       <ul
         className={clsx(
           "flex w-full max-w-sm justify-between mr-20",
-          "text-green_light",
+          "text-green_light text-[0.938rem]",
         )}
       >
         {links.map((link) => (

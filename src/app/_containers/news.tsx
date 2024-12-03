@@ -30,36 +30,38 @@ export default function News() {
   return (
     <section className="py-20">
       <Container>
-        <LineText className="mb-3">
-          <h5 className="text-gray_light">Latest News</h5>
+        <LineText className="mb-3" gray>
+          <h5 className="text-lg leading-relaxed text-gray_dark">
+            Latest News
+          </h5>
         </LineText>
 
-        <h3 className="mb-8 text-3xl text-green_light">
+        <h3 className="text-title mb-12">
           Check now latest tips and tricks of gardening and landscaping from
           blog.
         </h3>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-8">
           {cards.map((card) => (
             <div key={card.id} className="bg-green_ultra_light">
-              <Image src={card.img} alt={card.alt} className="mb-6" />
+              <Image src={card.img} alt={card.alt} className="mb-1" />
 
               <div className="p-8">
-                <div className="flex gap-8 mb-8">
+                <div className="mb-5 flex gap-6">
                   <div className="flex gap-1">
-                    <h4 className="text-lg text-green_light">Date:</h4>
-                    <h4 className="text-lg">{card.date}</h4>
+                    <h4 className="text-green_dark">Date:</h4>
+                    <h4 className="leading-relaxed text-gray_dark">{card.date}</h4>
                   </div>
 
                   <div className="flex gap-1">
-                    <h4 className="text-lg text-green_light">By:</h4>
-                    <h4 className="text-lg">{card.by}</h4>
+                    <h4 className="text-green_dark">By:</h4>
+                    <h4 className="leading-relaxed text-gray_dark">{card.by}</h4>
                   </div>
                 </div>
 
-                <h3 className="mb-4 text-2xl text-green_light">{card.title}</h3>
-                <p className="mb-8 text-lg text-gray_light">{card.text}</p>
-                <Button className="text-green_light">Read More</Button>
+                <h3 className="mb-6 text-2xl text-green_dark font-playfair_display leading-relaxed">{card.title}</h3>
+                <p className="mb-12 text-gray_darkl leading-relaxed">{card.text}</p>
+                <Button className="text-green_dark w-full max-w-52">Read More</Button>
               </div>
             </div>
           ))}

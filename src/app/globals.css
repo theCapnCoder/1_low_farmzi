@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  .text-title {
+    @apply font-playfair_display text-5xl leading-tight text-green_dark;
+  }
+}
 
 :root {
   --background: #ffffff;

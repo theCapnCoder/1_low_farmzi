@@ -15,7 +15,7 @@ export default function Main() {
               <h4 className="text-white_light">Make a garden with musion.</h4>
             </LineText>
 
-            <h2 className="text-white">
+            <h2 className="text-white font-playfair_display">
               If you have a garden and a library, you have everything you need.
             </h2>
 

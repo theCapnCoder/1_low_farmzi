@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Roboto, Playfair_Display } from "next/font/google";
 import "./globals.css";
+
+const roboto = Roboto({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
+});
+
+const playfairDisplay = Playfair_Display({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-playfair-display",
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,9 +39,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${playfairDisplay.variable} font-sans antialiased`}
       >
-      <div className="max-w-[1440px] m-auto">{children}</div>
+        <div className="m-auto max-w-[1440px]">{children}</div>
       </body>
     </html>
   );

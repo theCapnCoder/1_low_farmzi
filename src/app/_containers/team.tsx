@@ -34,13 +34,15 @@ const cards = [
 
 export default function Team() {
   return (
-    <section className="py-20">
+    <section className="py-24">
       <Container>
-        <div className="mb-10 pl-[40%]">
-          <LineText lineClassName="border-gray_light" className="mb-3">
-            <h4 className="text-gray_light">Team Members</h4>
+        <div className="mb-12 pl-[42%]">
+          <LineText gray className="mb-3">
+            <h4 className="text-lg leading-relaxed text-gray_dark">
+              Team Members
+            </h4>
           </LineText>
-          <h3 className="text-5xl text-green_light">
+          <h3 className="font-playfair_display text-5xl leading-tight text-green_dark">
             Farmzi feel proud for skilled team members.
           </h3>
         </div>
@@ -48,12 +50,16 @@ export default function Team() {
         <div className="grid grid-cols-3 gap-12">
           {cards.map((card) => (
             <div key={card.title}>
-              <Image src={card.img} alt={card.alt} className="mb-3" />
-              <LineText className="mb-2 border-gray_light">
-                <h5 className="text-gray_light">{card.subtitle}</h5>
+              <Image src={card.img} alt={card.alt} className="mb-8" />
+              <LineText className="mb-3" gray>
+                <h5 className="leading-relaxed text-gray_dark">
+                  {card.subtitle}
+                </h5>
               </LineText>
-              <h3 className="mb-5 text-2xl text-green_light">{card.title}</h3>
-              <p className="text-xl text-gray_light">{card.text}</p>
+              <h3 className="mb-5 font-playfair_display text-2xl leading-relaxed text-green_dark">
+                {card.title}
+              </h3>
+              <p className="leading-relaxed max-w-[85%] text-gray_dark">{card.text}</p>
             </div>
           ))}
         </div>

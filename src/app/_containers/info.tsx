@@ -11,14 +11,16 @@ export default function Info() {
     { count: "Winning Award", text: "98 +" },
   ];
   return (
-    <section className="py-20">
+    <section className="py-24 mb-28">
       <Container>
-        <div className="mb-10 grid grid-cols-4 bg-green_ultra_light p-16">
+        <div className="mb-24 grid grid-cols-4 bg-green_ultra_light py-16 ">
           {list.map((item) => (
             <div key={item.count} className="flex flex-col items-center">
-              <p className="mb-3 text-4xl text-green_light">{item.text}</p>
-              <LineText>
-                <h5 className="text-gray_light">{item.count}</h5>
+              <p className="text-5xl leading-relaxed text-green_dark">
+                {item.text}
+              </p>
+              <LineText gray>
+                <h5 className="text-lg text-gray_dark">{item.count}</h5>
               </LineText>
             </div>
           ))}
@@ -26,20 +28,26 @@ export default function Info() {
 
         <div className="relative">
           <Image src={Field} alt="field" />
-          <div className="absolute bottom-0 left-0 flex max-w-[25%] flex-col gap-4 bg-green_light px-12 py-16">
+          <div className="absolute bottom-0 left-0 flex max-w-[25%] flex-col gap-4 bg-green_dark px-11 py-12">
             <div>
-              <h4 className="text-white_light">Project:</h4>
-              <h3 className="text-xl text-white">Farm Design</h3>
+              <h4 className="leading-relaxed text-green_light">Project:</h4>
+              <h3 className="font-playfair_display text-2xl leading-relaxed text-white">
+                Farm Design
+              </h3>
             </div>
 
             <div>
-              <h4 className="text-white_light">Client:</h4>
-              <h3 className="text-xl text-white">Alex Milan</h3>
+              <h4 className="leading-relaxed text-green_light">Client:</h4>
+              <h3 className="font-playfair_display text-2xl leading-relaxed text-white">
+                Alex Milan
+              </h3>
             </div>
 
             <div>
-              <h4 className="text-white_light">Location:</h4>
-              <h3 className="text-xl text-white">Mississippi, USA</h3>
+              <h4 className="leading-relaxed text-green_light">Location:</h4>
+              <h3 className="font-playfair_display text-2xl leading-relaxed text-white">
+                Mississippi, USA
+              </h3>
             </div>
           </div>
         </div>

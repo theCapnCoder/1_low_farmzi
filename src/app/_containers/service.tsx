@@ -21,7 +21,7 @@ const cards = [
 
 export default function Service() {
   return (
-    <section className="bg-green_ultra_light py-24">
+    <section className="bg-green_ultra_light pt-24 pb-28">
       <Container>
         <LineText gray className="mb-4">
           <h5 className="text-gray_dark">Our Services</h5>
